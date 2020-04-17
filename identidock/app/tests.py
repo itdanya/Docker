@@ -4,7 +4,7 @@ import identidock
 class TestCase(unittest.TestCase):
 
     def setUp(self):
-        identydock.app.config["TESTING"] = True
+        identidock.app.config["TESTING"] = True
         self.app = identidock.app.test_client()
 
     def test_get_mainpage(self):
